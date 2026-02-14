@@ -1,0 +1,24 @@
+
+22212019232425262728293031323334353637383940
+    Serial.print(rfid.uid.uidByte[i], HEX);
+    if (i < rfid.uid.size - 1) Serial.print(" ");
+  }
+  Serial.println();
+
+  rfid.PICC_HaltA();
+  rfid.PCD_StopCrypto1();
+  delay(300);
+}
+
+Message (Enter to send message to 'ESP32 Dev Module' on 'COM3')
+No Line Ending
+115200 baud
+13:44:54.412 -> load:0x40078000,len:16612
+13:44:54.412 -> load:0x40080400,len:3500
+13:44:54.412 -> entry 0x400805b4
+13:44:55.561 -> RC522 Version: 0x82
+13:44:55.561 -> Tap card...
+13:45:12.517 -> UID: 6D 74 F1 05
+13:45:27.012 -> UID: 43 68 E7 CE
+13:45:28.433 -> UID: 43 68 E7 CE
+13:46:38.368 -> ets Jul 29 2019 12:21:46
